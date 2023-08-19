@@ -100,6 +100,12 @@
                         Console.WriteLine($"Gelmeyen Öğrenci: {item.studentName}");   
                     }
                 }
+
+                else if(result.ToLower() == "Çıkış".ToLower() || result == "4")
+                {
+                    Console.WriteLine("Ziyaretiniz için teşekkürler. Tekrar görüşmek üzere.");
+                    break;
+                }
             }    
         }
     }
