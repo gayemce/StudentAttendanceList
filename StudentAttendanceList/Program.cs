@@ -90,6 +90,16 @@
                         goto tekrar1;
                     }
                 }
+
+                else if(result.ToLower() == "Gelmeyen Öğrenci Listesi" || result == "3")
+                {
+                    Console.WriteLine("* Gelmeyen Öğrenci Listesi *\n");
+                    List<Student> notInClass = students.Where(student => student.inClass == false).ToList();
+                    foreach (Student item in notInClass)
+                    {
+                        Console.WriteLine($"Gelmeyen Öğrenci: {item.studentName}");   
+                    }
+                }
             }    
         }
     }
