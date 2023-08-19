@@ -1,10 +1,14 @@
-﻿namespace StudentAttendanceList
+﻿using System.Reflection;
+
+namespace StudentAttendanceList
 {
+
     public class Student
     {
         public string studentName;
         public bool inClass;
     }
+    
     internal class Program
     {
         static void Main(string[] args)
@@ -105,6 +109,11 @@
                 {
                     Console.WriteLine("Ziyaretiniz için teşekkürler. Tekrar görüşmek üzere.");
                     break;
+                }
+
+                else
+                {
+                    Console.WriteLine("Lütfen listedeki işlemlerden birini seçin!");
                 }
             }    
         }
