@@ -74,6 +74,21 @@
                             Console.WriteLine($"{item.studentName} - {item.inClass}");
                         }
                     }
+                    else if (teacherResult.ToLower() == "False".ToLower())
+                    {
+                        Console.WriteLine();
+                        Student student = new();
+                        students[selectedStudent - 1].inClass = false;
+                        foreach (Student item in students)
+                        {
+                            Console.WriteLine($"{item.studentName} - {item.inClass}");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("* Uyarı: Lütfen geçerli bir işlem yapınız.");
+                        goto tekrar1;
+                    }
                 }
             }    
         }
