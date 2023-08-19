@@ -12,6 +12,6 @@ Bu proje, öğrenci yoklama işlemlerini yönetmek için bir konsol uygulamasıd
 ## Nasıl Kullanılır
 
 1. Bu projeyi klonlayın veya indirin.
-2. Projeyi açın ve `StudentAttendanceList` dosyasını derleyin.
+2. Projeyi açın ve `StudentAttendanceList.sln` dosyasını derleyin.
 3. Aşağıda, farklı işlem seçeneklerini ve bunların nasıl kullanılacağını bulacaksınız.
 4. Her işlem seçeneği için ekrandaki talimatları izleyin.
