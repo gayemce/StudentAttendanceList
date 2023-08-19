@@ -36,6 +36,15 @@
                         Console.WriteLine($"{item.studentName} - {item.inClass}");
                     }
                 }
+
+                else if (result.ToLower() == "Yoklama Al".ToLower() || result == "2")
+                {
+                    Console.WriteLine("* Yoklama Al *\n");
+                    for (int i = 0; i < students.Count(); i++)
+                    {
+                        Console.WriteLine($"{i + 1}. {students[i].studentName}");
+                    }
+                }
             }    
         }
     }
